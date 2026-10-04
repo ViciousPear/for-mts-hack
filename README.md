@@ -30,8 +30,9 @@
 ## Быстрый запуск (One-Command Deployment)
 
 Развертывание всей инфраструктуры с нуля выполняется одной командой:
-
+```bash
 chmod +x deploy.sh
+```bash
 ./deploy.sh
 
 ### Настраиваемые метрики (Prometheus Metrics)
@@ -53,7 +54,7 @@ chmod +x deploy.sh
 
 ### Как проверить получение метрик:
    Выполните проброс порта к Prometheus:
-
+   ```bash
    kubectl port-forward svc/prometheus-kube-prometheus-prometheus 9090:9090 -n monitoring
 
 ### Настраиваемое логирование (Filebeat Logging)
