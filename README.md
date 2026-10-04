@@ -33,6 +33,7 @@
 ```bash
 chmod +x deploy.sh
 ./deploy.sh
+```
 
 ### Настраиваемые метрики (Prometheus Metrics)
 
@@ -55,6 +56,7 @@ chmod +x deploy.sh
    Выполните проброс порта к Prometheus:
    ```bash
    kubectl port-forward svc/prometheus-kube-prometheus-prometheus 9090:9090 -n monitoring
+   ```
 
 ### Настраиваемое логирование (Filebeat Logging)
 
